@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,28 +52,17 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Inicio</a></li>
-          <li><a href="#about">Sobre Nosotros</a></li>
+          <!-- <li><a href="#about">Sobre Nosotros</a></li> -->
+          <li class="dropdown"><a href="#about"><span>Sobre Nosotros</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#client">Cliente</a></li>
+              <li><a href="#conduc">Conductor</a></li>
+            </ul>
+          </li>
           <li><a href="#features">Por qué elegirnos?</a></li>
           <li><a href="#gallery">Galeria</a></li>
           <li><a href="#team">Equipo de Trabajo</a></li>
-          <!-- <li><a href="#faq">F.A.Q</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
           <li><a href="#contact">Contactenos</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -120,7 +111,9 @@
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <p>
-              Somos una plataforma de transporte inclusivo diseñada especialmente para personas con movilidad reducida. Nuestro compromiso es proporcionar un servicio seguro, cómodo y accesible, con vehículos adaptados y conductores capacitados para atender las necesidades específicas de nuestros usuarios. 
+              Somos una plataforma de transporte inclusivo diseñada especialmente para personas con movilidad reducida.
+              Nuestro compromiso es proporcionar un servicio seguro, cómodo y accesible, con vehículos adaptados y
+              conductores capacitados para atender las necesidades específicas de nuestros usuarios.
             </p>
           </div>
 
@@ -134,6 +127,53 @@
       </div>
 
     </section><!-- /About Section -->
+
+
+
+    <!-- Feature Details Section -->
+    <section id="feature-details" class="feature-details section">
+
+      <div class="container">
+
+        <section id="client">
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+              <img src="assets/img/Wearing a Mask.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+              <h3>Detalles Cliente</h3>
+              <p class="fst-italic">
+                En nuestra aplicación, los clientes pueden solicitar servicios de transporte adaptado, 
+                verificar la disponibilidad de vehículos accesibles, y seguir el trayecto en tiempo real para mayor seguridad. 
+              </p>
+              <p>
+                Sin embargo, los usuarios deben cumplir con las normas establecidas, como proporcionar información veraz y completa, 
+                no realizar solicitudes fuera de la zona de cobertura y tratar a los conductores con respeto y cortesía en todo momento.
+              </p>
+            </div>
+          </div><!-- Features Item -->
+
+        </section>
+
+        <section id="conduc">
+          <div class="row gy-4 align-items-center features-item light-background">
+            <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" >
+              <img src="assets/img/Car.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7" data-aos="fade-up">
+              <h3>Detalles Conductor</h3>
+              <p>Los conductores en nuestra plataforma tienen la responsabilidad de aceptar viajes,
+                brindar asistencia personalizada a personas con movilidad reducida y seguir las rutas asignadas por el sistema. Además, pueden recibir soporte continuo a través del panel web para cualquier incidencia. Sin embargo, no está permitido rechazar pasajeros sin causa justificada, 
+                modificar tarifas o rutas asignadas, ni compartir datos personales de los clientes.</p>
+            </div>
+          </div><!-- Features Item -->
+
+        </section>
+      </div>
+
+    </section><!-- /Feature Details Section -->
+
+
 
     <!-- Features Section -->
     <section id="features" class="features section">
@@ -215,7 +255,6 @@
     </section><!-- /Features Section -->
 
 
-
     <!-- Gallery Section -->
     <section id="gallery" class="gallery section">
 
@@ -264,18 +303,42 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-1.png"><img src="assets/img/app-gallery/app-gallery-1.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-2.png"><img src="assets/img/app-gallery/app-gallery-2.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-3.png"><img src="assets/img/app-gallery/app-gallery-3.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-4.png"><img src="assets/img/app-gallery/app-gallery-4.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-5.png"><img src="assets/img/app-gallery/app-gallery-5.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-6.png"><img src="assets/img/app-gallery/app-gallery-6.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-7.png"><img src="assets/img/app-gallery/app-gallery-7.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-8.png"><img src="assets/img/app-gallery/app-gallery-8.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-9.png"><img src="assets/img/app-gallery/app-gallery-9.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-10.png"><img src="assets/img/app-gallery/app-gallery-10.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-11.png"><img src="assets/img/app-gallery/app-gallery-11.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-12.png"><img src="assets/img/app-gallery/app-gallery-12.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-1.png"><img src="assets/img/app-gallery/app-gallery-1.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-2.png"><img src="assets/img/app-gallery/app-gallery-2.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-3.png"><img src="assets/img/app-gallery/app-gallery-3.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-4.png"><img src="assets/img/app-gallery/app-gallery-4.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-5.png"><img src="assets/img/app-gallery/app-gallery-5.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-6.png"><img src="assets/img/app-gallery/app-gallery-6.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-7.png"><img src="assets/img/app-gallery/app-gallery-7.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-8.png"><img src="assets/img/app-gallery/app-gallery-8.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-9.png"><img src="assets/img/app-gallery/app-gallery-9.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-10.png"><img src="assets/img/app-gallery/app-gallery-10.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-11.png"><img src="assets/img/app-gallery/app-gallery-11.png"
+                  class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full"
+                href="assets/img/app-gallery/app-gallery-12.png"><img src="assets/img/app-gallery/app-gallery-12.png"
+                  class="img-fluid" alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -305,10 +368,10 @@
                 <span>Desarrollo Móvil y Frontend Web</span>
 
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://www.facebook.com/anderson.zapata.545402?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                  <a href="https://github.com/Ander0907"><i class="bi bi-github"></i></a>
                   <a href="https://www.instagram.com/ander.zb/"><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/anderson-zapata-b430412ba/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -322,10 +385,12 @@
                 <span>Aprendiz ADSO</span>
                 <span>Lider de desarrollo Móvil y DBA</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://www.facebook.com/juanesteban.londonogutierrez?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                  <a href="https://github.com/JuanesZg"><i class="bi bi-github"></i></a>
                   <a href="https://www.instagram.com/juanes3z/"><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a
+                    href="https://www.linkedin.com/in/juan-esteban-londo%C3%B1o/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                      class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -339,10 +404,10 @@
                 <span>Aprendiz ADSO</span>
                 <span>Desarrollo Móvil y Backend Web</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://www.facebook.com/profile.php?id=100047424827704&locale=es_LA"><i class="bi bi-facebook"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                  <a href="https://github.com/JeronimoTB"><i class="bi bi-github"></i></a>
                   <a href="https://www.instagram.com/jero_14t/"><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/jeronimo-tobon-berrio/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -412,39 +477,39 @@
 
           </div> -->
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+        <div class="col-lg-8">
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Ingresa tu nombre" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Ingresa tu correo" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Enviar</button>
-                </div>
-
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Ingresa tu nombre" required="">
               </div>
-            </form>
-          </div><!-- End Contact Form -->
 
-        </div>
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Ingresa tu correo" required="">
+              </div>
+
+              <div class="col-12">
+                <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+              </div>
+
+              <div class="col-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
+              </div>
+
+              <div class="col-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit">Enviar</button>
+              </div>
+
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
 
       </div>
 
@@ -475,16 +540,16 @@
             <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#about">Sobre Nosotros</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#features">Por qué elegirnos?</a></li>
-            
+
           </ul>
         </div>
-        
+
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>...</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#gallery">Galeria</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#team">Equipo de Trabajo</a></li>
-             <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contactenos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contactenos</a></li>
             <!--<li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li> -->
           </ul>
@@ -503,7 +568,7 @@
 
       </div>
     </div>
-<!-- 
+    <!-- 
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Appland</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
@@ -514,7 +579,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
