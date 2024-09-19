@@ -1021,6 +1021,11 @@ section,
   max-width: 80%;
 }
 
+.img-juan{
+  max-width: 80%;
+  max-height: 336px;
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1090,9 +1095,6 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
-/* .contacte{
-  max-height: 0px;
-} */
 
 /*--------------------------------------------------------------
 # Starter Section Section
